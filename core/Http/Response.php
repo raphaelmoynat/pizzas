@@ -9,8 +9,8 @@ class Response
 
     public function render($nomDeTemplate, $donnees)
     {
-         View::render($nomDeTemplate, $donnees);
-         return $this;
+        View::render($nomDeTemplate, $donnees);
+        return $this;
     }
 
 

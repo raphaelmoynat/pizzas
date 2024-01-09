@@ -6,9 +6,9 @@ class PDOMySQL
 {
 
 
-   public static function getPdo(){
+    public static function getPdo(){
 
-       $dotEnv = new DotEnv();
+        $dotEnv = new DotEnv();
 
 
         $dbHost = $dotEnv->getVariable("DBHOST");
@@ -28,6 +28,10 @@ class PDOMySQL
         );
         return $pdo;
     }
+
+
+
+
 
 
 

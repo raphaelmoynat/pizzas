@@ -17,20 +17,20 @@ class Kernel
         }
 
 
-    $type = "pizza";
-    $action = "index";
+        $type = "pizza";
+        $action = "index";
 
-    if(!empty($_GET['type'])){ $type = $_GET['type']; }
-    if(!empty($_GET['action'])){ $action = $_GET['action']; }
+        if(!empty($_GET['type'])){ $type = $_GET['type']; }
+        if(!empty($_GET['action'])){ $action = $_GET['action']; }
 
 
 
-    $type = ucfirst($type);
-    $controllerName = "App\Controller\\".$type."Controller";
+        $type = ucfirst($type);
+        $controllerName = "App\Controller\\".$type."Controller";
 
-    $controller = new $controllerName();
+        $controller = new $controllerName();
 
-    $controller->$action();
+        $controller->$action();
 
 
 

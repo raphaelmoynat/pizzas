@@ -1,10 +1,12 @@
-<div class="pizza m-4">
-    <p><strong>nom : <?=  ?> </strong></p>
-    <p><strong>taille : <?=  ?></strong></p>
-    <a  class="btn btn-danger">supprimer</a>
-    <a  class="btn btn-warning">edit</a>
+<h2>Welcome to the pizzas</h2>
+<?php
+foreach ($pizzas as $pizza): ?>
+
+    <div class="container form-control">
+        <h4>Name : <?= $pizza->getName(); ?> </h4>
+        <h4>Size : <?= $pizza->getSize(); ?> cm </h4>
+        <a href="?type=pizza&action=delete" class="btn btn-warning">Delete</a>
+    </div>
 
 
-    <a  class="btn btn-success">voir</a>
-
-</div>
+<?php endforeach; ?>

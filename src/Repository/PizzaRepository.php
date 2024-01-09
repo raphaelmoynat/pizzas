@@ -2,8 +2,13 @@
 
 namespace App\Repository;
 
-#[TargetEntity(name: Pizza::class)]
-class PizzaRepository
+
+use App\Entity\PizzaEntity;
+use Core\Attributes\TargetEntity;
+use Core\Repository\Repository;
+
+#[TargetEntity(name: PizzaEntity::class)]
+class PizzaRepository extends Repository
 {
 
 }

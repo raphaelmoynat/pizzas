@@ -4,7 +4,7 @@ namespace Core\View;
 
 class View
 {
-   public static function render($nomDeTemplate, $donnees){
+    public static function render($nomDeTemplate, $donnees){
 
         ob_start();
         extract($donnees);
